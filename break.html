@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blink Break</title>
+  <link rel="stylesheet" href="break.css">
+</head>
+<body>
+  <div class="break-box">
+    <p class="eyebrow">Eye break</p>
+    <h2>Look 20 feet away</h2>
+    <p class="subtitle">Rest your eyes. Blink naturally. Let your focus reset.</p>
+
+    <div class="timer-shell">
+      <div id="countdown">20</div>
+      <span>seconds</span>
+    </div>
+
+    <div class="bar"><span id="progress"></span></div>
+    <p class="hint">When this ends, your next 20-minute focus session starts automatically.</p>
+  </div>
+
+  <!-- 🔊 Sounds -->
+  <audio id="tickSound" src="tick.mp3"></audio>
+  <audio id="chimeSound" src="chime.mp3"></audio>
+
+  <script src="break.js"></script>
+</body>
+</html>

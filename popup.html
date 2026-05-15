@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blink – Eye Care</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <div>
+        <p class="eyebrow">20-20-20 reminder</p>
+        <h1>Blink</h1>
+      </div>
+      <span id="statusChip" class="status-chip idle">Ready</span>
+    </div>
+
+    <p class="subtitle">A calm nudge to rest your eyes every 20 minutes.</p>
+
+    <div class="hero">
+      <div class="ring">
+        <div id="timer" class="timer work">20:00</div>
+      </div>
+      <div id="mode" class="mode">Work session active</div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <span>Phase</span>
+        <strong id="phaseLabel">Work</strong>
+      </div>
+      <div class="stat-card">
+        <span>Next break</span>
+        <strong id="nextLabel">20 min</strong>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="toggle" class="primary toggle-button" type="button" aria-live="polite">
+        <span class="button-label button-label-start">Start reminders</span>
+        <span class="button-label button-label-stop">Stop reminders</span>
+      </button>
+    </div>
+
+    <p class="footnote">We will only interrupt you for a 20-second reset and then return to focus mode.</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

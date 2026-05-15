@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Blink - The Eye Care",
+  "description": "20-20-20 eye care reminder that runs reliably in the background.",
+  "version": "1.3",
+  "permissions": [
+    "alarms",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
